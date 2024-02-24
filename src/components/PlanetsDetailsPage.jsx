@@ -67,18 +67,14 @@ const PlanetsDetailsPage = () => {
           </div>
         )}
         {planetDetails && (
-          <div className="w-full bg-gray-800 p-8 rounded-lg">
-            <div className='flex flex-col justify-center items-center mb-5'>
-            <h2 className="text-3xl font-bold mb-4 text-yellow-500 ">Planet Name - {planetDetails.name}</h2>
-            </div>
-            <div>
-            <div className='flex gap-4'>
+          <div className="w-full  bg-gray-800 p-8 rounded-lg">
+            <h2 className="text-3xl font-bold mb-4 text-yellow-400">Planet Name - {planetDetails.name}</h2>
+            <div className='flex flex-wrap gap-4'>
               <p className="w-full sm:w-1/2"><span className="font-bold">Climate:</span> {planetDetails.climate}</p>
               <p className="w-full sm:w-1/2"><span className="font-bold">Terrain:</span> {planetDetails.terrain}</p>
               <p className="w-full sm:w-1/2"><span className="font-bold">Diameter:</span> {planetDetails.diameter}</p>
               <p className="w-full sm:w-1/2"><span className="font-bold">Population:</span> {planetDetails.population}</p>
               <p className="w-full sm:w-1/2"><span className="font-bold">Surface Water:</span> {planetDetails.surface_water}</p>
-            </div>
             </div>
           </div>
         )}
